@@ -1,9 +1,18 @@
 # AV Badge 2024
 
+
 The Aerospace Village badge for DC32 truly is both a feat of engineering and a work of art. The headlining feature of the badge is its ability to natively receive and display nearby aircraft using the ADS-B signals that most aircraft transmit. What normally takes specialized components and an SDR to receive the 1090 MHz signal, this badge uses some hardware hacks and clever trickery to make regular components do the work.
 ​
 But this badge doesn't just display aircraft, it's also an entire linux single-board computer with built-in Wi-Fi, GPS, dual-core processor, 128MB DDR3 RAM, and 8GB of eMMC storage. Want to hack it? Go ahead and connect with SSH or plug in a keyboard to the USB port and open up a terminal. It even has a microSD slot.
 ​
+## Myrt Mode Fork ##
+
+I wanted the flashy radar on top of the maps I worked so hard on, so that's myrt mode.
+
+<img width="720" height="900" alt="myrtcrop" src="https://github.com/user-attachments/assets/6e66819e-1cef-4efb-82fd-b4d90f1bccaf" />
+
+deltas are in here if anyone else agrees. you'll have to do a complete make first, before you '''make winglet-gui-reconfigure all'''
+
 ### What else can the badge do?
 - Fully integrated ADS-B receiver with onboard PCB antenna and optional external antenna
 - GPS with own-ship position on a moving map
