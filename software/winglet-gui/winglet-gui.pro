@@ -70,6 +70,7 @@ SOURCES += \
     winglet-ui/window/mapscope.cpp \
     winglet-ui/window/oscope.cpp \
     winglet-ui/window/radarscope.cpp \
+    winglet-ui/window/myrtmode.cpp \
     winglet-ui/window/scrollarea.cpp \
     winglet-ui/window/settingsmenu.cpp \
     winglet-ui/window/simplemediaplayer.cpp \
@@ -127,6 +128,7 @@ HEADERS += \
     winglet-ui/window/mapscope.h \
     winglet-ui/window/oscope.h \
     winglet-ui/window/radarscope.h \
+    winglet-ui/window/myrtmode.h \
     winglet-ui/window/scrollarea.h \
     winglet-ui/window/settingsmenu.h \
     winglet-ui/window/simplemediaplayer.h \

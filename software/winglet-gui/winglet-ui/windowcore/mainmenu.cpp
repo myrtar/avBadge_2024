@@ -16,6 +16,7 @@
 #include "winglet-ui/window/gpstracker.h"
 #include "winglet-ui/window/scrollarea.h"
 #include "winglet-ui/window/radarscope.h"
+#include "winglet-ui/window/myrtmode.h"
 #include "winglet-ui/window/mapscope.h"
 #include "winglet-ui/window/settingsmenu.h"
 #include "winglet-ui/window/canardboard.h"
@@ -25,6 +26,7 @@ namespace WingletUI {
 enum AppType {
     APP_FLIGHT_LIST,
     APP_RADAR_SCOPE,
+    APP_MYRT_MODE,
     APP_MAP_SCOPE,
     APP_GPS_LIST,
     APP_GPS_TRACKER,
@@ -119,6 +121,11 @@ const WingletUI::AppMenuItem mainMenuList[] = {
         .title = "Radar Scope",
         .submenu = NULL,
         .type = APP_RADAR_SCOPE,
+    },
+    {
+        .title = "Myrt Mode",
+        .submenu = NULL,
+        .type = APP_MYRT_MODE,
     },
     {
         .title = "Flight List",
@@ -335,6 +342,9 @@ void MainMenu::menuItemSelected(QModelIndex index)
             break;
         case APP_RADAR_SCOPE:
             WingletGUI::inst->addWidgetOnTop(new RadarScope(WingletGUI::inst));
+            break;
+        case APP_MYRT_MODE:
+            WingletGUI::inst->addWidgetOnTop(new MyrtMode(WingletGUI::inst));
             break;
         case APP_MAP_SCOPE:
             WingletGUI::inst->addWidgetOnTop(new MapScope(WingletGUI::inst));
